@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraform Static Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 24px 8%;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 70px auto;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 40px 24px;
+            border-radius: 14px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #2563eb;
+        }
+
+        .status {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 10px 16px;
+            border-radius: 20px;
+            background: #dcfce7;
+            color: #166534;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My AWS Static Website</h1>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Successfully Deployed with Terraform!</h2>
+            <p>
+                This static website is hosted on Amazon S3 and delivered
+                globally using Amazon CloudFront.
+            </p>
+            <p>Learning AWS and Infrastructure as Code, one day at a time.</p>
+            <span class="status">Website Ready</span>
+        </div>
+    </main>
+
+    <footer>
+        Day 14/30 — Terraform Beginner Project
+    </footer>
+</body>
+</html>
