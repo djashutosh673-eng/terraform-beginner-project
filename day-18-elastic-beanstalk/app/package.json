@@ -1,0 +1,12 @@
+{
+  "name": "terraform-day18-blue-green",
+  "version": "1.0.0",
+  "description": "AWS Elastic Beanstalk Blue Green Deployment Demo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

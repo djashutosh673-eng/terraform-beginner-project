@@ -1,5 +1,11 @@
-# Terraform working directory
+
+# ==========================================
+# TERRAFORM
+# ==========================================
+
+# Terraform working directories
 .terraform/
+**/.terraform/
 
 # Terraform state files
 *.tfstate
@@ -9,27 +15,12 @@
 crash.log
 crash.*.log
 
-# Variable files may contain secrets
+# Variable files (may contain secrets)
 *.tfvars
 *.tfvars.json
 
 # Saved Terraform plans
 *.tfplan
-
-# Terraform working directory
-**/.terraform/*
-
-# Terraform state files
-*.tfstate
-*.tfstate.*
-
-# Variable files that may contain secrets
-*.tfvars
-*.tfvars.json
-
-# Crash logs
-crash.log
-crash.*.log
 
 # Local override files
 override.tf
@@ -37,6 +28,41 @@ override.tf.json
 *_override.tf
 *_override.tf.json
 
-# Sensitive CLI configuration
+# Sensitive Terraform CLI configuration
 .terraformrc
 terraform.rc
+
+
+# ==========================================
+# PYTHON
+# ==========================================
+
+# Python virtual environments
+.venv/
+**/.venv/
+venv/
+**/venv/
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Generated Python Lambda dependencies
+**/lambda/package/
+
+# Generated Lambda deployment packages
+**/function.zip
+
+
+# ==========================================
+# MACOS
+# ==========================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Keep Day 19 Lambda deployment ZIP
+!day-19-image-processing-lambda/lambda/function.zip
